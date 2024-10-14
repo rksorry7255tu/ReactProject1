@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+    color:white;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+.hover-effect{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    width:350px;
+    height:350px;
+    overflow: hidden;
+    transition: 0.7s;
+   
+}
+.hover-effect img{
+    width:100%;
+    height:100%;
+    transition: transform 0.7s ease;
+    transform:translateZ(0);
+}
+.hover-effect img:hover {
+    transform: scale(1.1) translateZ(50px);
+}
+button{
+    font-weight: bolder !important;
+}
